@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal portfolio of Alex Carter — front-end developer crafting clean, modern web
-experiences." />
+  <meta name="description" content="Personal portfolio of Alex Carter — front-end developer crafting clean, modern web experiences." />
   <title>Alex Carter — Front-End Developer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-
-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display
-=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
   />
 </head>
@@ -21,8 +18,7 @@ href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&fa
   <header class="nav" id="nav">
     <a href="#home" class="nav__logo">AC<span>.</span></a>
 
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"
-aria-controls="navLinks">
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
 
@@ -110,7 +106,7 @@ aria-controls="navLinks">
             </p>
             <div class="project-card__footer">
               <span class="project-card__stack">React · TypeScript · D3</span>
-              <a href="#" class="project-card__link" aria-label="View Lumen Dashboard project">
+              <a href="#" class="btn btn--primary btn--small project-card__link" aria-label="View Lumen Dashboard project">
                 View Project ↗
               </a>
             </div>
@@ -118,8 +114,7 @@ aria-controls="navLinks">
         </article>
 
         <article class="project-card">
-          <div class="project-card__image project-card__image--alt" role="img" aria-label="Screenshot of Driftwood
-Travel">
+          <div class="project-card__image project-card__image--alt" role="img" aria-label="Screenshot of Driftwood Travel">
             <span>Driftwood Travel</span>
           </div>
           <div class="project-card__body">
@@ -131,7 +126,7 @@ Travel">
             </p>
             <div class="project-card__footer">
               <span class="project-card__stack">Next.js · Stripe · Sanity</span>
-              <a href="#" class="project-card__link" aria-label="View Driftwood Travel project">
+              <a href="#" class="btn btn--primary btn--small project-card__link" aria-label="View Driftwood Travel project">
                 View Project ↗
               </a>
             </div>
@@ -139,8 +134,7 @@ Travel">
         </article>
 
         <article class="project-card">
-          <div class="project-card__image project-card__image--accent" role="img" aria-label="Screenshot of Formkit
-UI">
+          <div class="project-card__image project-card__image--accent" role="img" aria-label="Screenshot of Formkit UI">
             <span>Formkit UI</span>
           </div>
           <div class="project-card__body">
@@ -152,7 +146,7 @@ UI">
             </p>
             <div class="project-card__footer">
               <span class="project-card__stack">React · Storybook · Rollup</span>
-              <a href="#" class="project-card__link" aria-label="View Formkit UI project">
+              <a href="#" class="btn btn--primary btn--small project-card__link" aria-label="View Formkit UI project">
                 View Project ↗
               </a>
             </div>
@@ -182,14 +176,13 @@ UI">
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
-required></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
         </div>
 
         <button type="submit" class="btn btn--primary btn--block">Send Message</button>
-
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
+
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
     </section>
   </main>
 
@@ -209,4 +202,3 @@ required></textarea>
   <script src="script.js"></script>
 </body>
 </html>
-```
