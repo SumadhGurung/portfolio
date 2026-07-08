@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Alex Carter — front-end developer crafting clean, modern web
+experiences." />
+  <title>Alex Carter — Front-End Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display
+=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">AC<span>.</span></a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false"
+aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <p class="hero__greet">Hi, I'm</p>
+      <h1 class="hero__name">Alex Carter.</h1>
+      <h2 class="hero__role">I build clean, modern web experiences.</h2>
+      <p class="hero__tag">
+        Front-end developer specializing in responsive interfaces, performant
+        interfaces, and thoughtful interactions — currently focused on React,
+        TypeScript, and design systems.
+      </p>
+      <a href="#projects" class="btn btn--primary">View My Work</a>
+    </section>
+
+    <!-- ================= ABOUT & SKILLS ================= -->
+    <section class="section" id="about">
+      <h2 class="section__title">About <span>&amp; Skills</span></h2>
+
+      <div class="about">
+        <div class="about__bio">
+          <p>
+            I'm a front-end developer with over four years of experience turning
+            product ideas into polished, accessible interfaces. I care deeply about
+            the small details — typography, motion, and the way a UI feels under
+            a real human thumb.
+          </p>
+          <p>
+            Most recently I've been leading the rebuild of a customer dashboard
+            used by 30k+ daily users, focusing on performance budgets and design
+            consistency across teams. Before that, I shipped marketing sites,
+            internal tools, and a handful of open-source components.
+          </p>
+          <p>
+            When I'm not coding, you'll find me sketching UI in Figma, reading
+            about typography, or getting way too competitive about a board game.
+          </p>
+        </div>
+
+        <div class="about__skills">
+          <h3 class="about__heading">Technical Skills</h3>
+          <ul class="skills-grid">
+            <li class="skill-chip">HTML5 &amp; Semantic Markup</li>
+            <li class="skill-chip">CSS3 / SASS / Tailwind</li>
+            <li class="skill-chip">JavaScript (ES6+)</li>
+            <li class="skill-chip">TypeScript</li>
+            <li class="skill-chip">React &amp; Next.js</li>
+            <li class="skill-chip">Vue / Nuxt</li>
+            <li class="skill-chip">Node.js &amp; Express</li>
+            <li class="skill-chip">REST &amp; GraphQL APIs</li>
+            <li class="skill-chip">PostgreSQL / MongoDB</li>
+            <li class="skill-chip">Git &amp; GitHub</li>
+            <li class="skill-chip">Figma / Design Systems</li>
+            <li class="skill-chip">Vite / Webpack / Turborepo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <h2 class="section__title">Featured <span>Projects</span></h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-card__image" role="img" aria-label="Screenshot of Lumen Dashboard">
+            <span>Lumen Dashboard</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Lumen Dashboard</h3>
+            <p class="project-card__desc">
+              A real-time analytics dashboard for SaaS teams. Built with React,
+              TypeScript, and a custom chart library — features live data
+              streaming and role-based access control.
+            </p>
+            <div class="project-card__footer">
+              <span class="project-card__stack">React · TypeScript · D3</span>
+              <a href="#" class="project-card__link" aria-label="View Lumen Dashboard project">
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image project-card__image--alt" role="img" aria-label="Screenshot of Driftwood
+Travel">
+            <span>Driftwood Travel</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Driftwood Travel</h3>
+            <p class="project-card__desc">
+              A boutique travel booking platform with a focus on slow, curated
+              itineraries. Designed end-to-end in Figma, built on Next.js with
+              Stripe Checkout and a headless CMS.
+            </p>
+            <div class="project-card__footer">
+              <span class="project-card__stack">Next.js · Stripe · Sanity</span>
+              <a href="#" class="project-card__link" aria-label="View Driftwood Travel project">
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__image project-card__image--accent" role="img" aria-label="Screenshot of Formkit
+UI">
+            <span>Formkit UI</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Formkit UI</h3>
+            <p class="project-card__desc">
+              An open-source component library of 40+ accessible form primitives
+              for React. Fully themeable, keyboard-navigable, and used in
+              production by several YC-backed startups.
+            </p>
+            <div class="project-card__footer">
+              <span class="project-card__stack">React · Storybook · Rollup</span>
+              <a href="#" class="project-card__link" aria-label="View Formkit UI project">
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact">
+      <h2 class="section__title">Get In <span>Touch</span></h2>
+      <p class="contact__lede">
+        Have a project in mind, a role to discuss, or just want to say hi?
+        Drop a message and I'll get back within 48 hours.
+      </p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__socials">
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="mailto:hello@alexcarter.dev" aria-label="Email">Email</a>
+    </div>
+    <p class="footer__copy">
+      Designed &amp; built by Alex Carter · © <span id="year"></span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
