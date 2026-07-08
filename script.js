@@ -57,9 +57,6 @@
 
   /* ---------------------------------------------
      Smooth scroll for in-page anchor links
-     (CSS scroll-behavior handles browsers natively;
-      this JS version ensures consistent offset
-      accounting for the sticky nav height.)
   --------------------------------------------- */
   const NAV_OFFSET = 72; // matches --nav-h
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
