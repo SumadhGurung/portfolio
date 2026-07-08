@@ -104,10 +104,10 @@ button { font: inherit; cursor: pointer; }
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.15rem;
-  color: var(--text);
+  color: var(--accent);
   letter-spacing: -0.5px;
 }
-.nav__logo span { color: var(--accent); }
+.nav__logo span { color: var(--text); }
 
 .nav__links {
   display: flex;
